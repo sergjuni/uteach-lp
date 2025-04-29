@@ -8,6 +8,7 @@ import icon_4 from '../assets/icons/icon_4.png';
 import icon_5 from '../assets/icons/icon_5.png';
 import desktop from '../assets/images/Desktop.png';
 import blob from '../assets/images/Blob.png';
+import vector14 from '../assets/images/vector_14.png';
 
 const Hero = () => {
   return (
@@ -17,11 +18,11 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1">
               <h1 className="text-6xl font-bold mb-6 relative">
-                <span className="relative inline-block">
+                <span className="relative inline-block z-10">
                   Teach
-                  <div className="absolute -bottom-2 left-0 w-full h-3 bg-orange-400 -z-10 transform -rotate-1"></div>
+                  <img src={vector14} alt="" className="absolute -bottom-1 left-0 w-full -z-10" />
                 </span>
-                {" "}students worldwide
+                <br/>students worldwide
               </h1>
               <p className="text-xl text-gray-600 mb-8">
                 Amet nunc diam orci duis ut sit diam arcu, nec.
@@ -87,9 +88,9 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row items-center gap-16">
             <div className="flex-1">
               <h2 className="text-5xl font-bold mb-10">
-                An <span className="relative inline-block">
+                An <span className="relative inline-block z-10">
                   all-in-one
-                  <div className="absolute -bottom-2 left-0 w-full h-3 bg-orange-400 -z-10 transform -rotate-1"></div>
+                  <img src={vector14} alt="" className="absolute -bottom-2 left-0 w-full -z-10" />
                 </span> app<br />
                 that makes it easier
               </h2>

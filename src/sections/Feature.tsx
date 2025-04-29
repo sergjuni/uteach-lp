@@ -1,4 +1,5 @@
 import featureImageRight from '../assets/images/feature_image_right.png'
+import vector14 from '../assets/images/vector_14.png'
 
 const Feature = () => {
   return (
@@ -7,9 +8,9 @@ const Feature = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-[#14183E] mb-6">
-              All the cool <span className="relative inline-block">
+              All the cool <span className="relative inline-block z-10">
                 features
-                <div className="absolute -bottom-2 left-0 w-full h-3 bg-orange-400 -z-10 transform -rotate-1"></div>
+                <img src={vector14} alt="" className="absolute -bottom-1 md:-bottom-2 left-0 w-full -z-10" />
               </span>
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
