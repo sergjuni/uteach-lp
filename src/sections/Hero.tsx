@@ -12,11 +12,9 @@ import blob from '../assets/images/Blob.png';
 const Hero = () => {
   return (
     <>
-      {/* First Hero Section */}
       <section className="pt-40 pb-16 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
-            {/* Left Content */}
             <div className="flex-1">
               <h1 className="text-6xl font-bold mb-6">
                 <span className="text-orange-500">Teach</span> students worldwide
@@ -36,8 +34,6 @@ const Hero = () => {
                   View Demo
                 </Button>
               </div>
-
-              {/* Trusted By Section */}
               <div>
                 <div className="flex items-center gap-8">
                   <p className="text-gray-600">
@@ -54,11 +50,8 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-
-            {/* Right Content with Image and Chat Bubbles */}
             <div className="flex-1 relative">
               <div className="relative px-4 md:px-0">
-                {/* Chat Bubbles */}
                 <div className="absolute -top-8 right-0 bg-white rounded-lg p-3 shadow-lg z-10 max-w-[200px] text-sm">
                   Nunc, at libero neque
                 </div>
@@ -71,8 +64,6 @@ const Hero = () => {
                 <div className="absolute bottom-16 left-8 bg-[#0F172A] text-white rounded-lg p-3 shadow-lg z-10 max-w-[180px] text-sm">
                   Vitae viverra ut non
                 </div>
-
-                {/* Main Image with Background Shapes */}
                 <div className="relative">
                   <div className="absolute top-0 right-0 w-64 md:w-72 h-64 md:h-72 bg-orange-500 rounded-full opacity-80" />
                   <div className="absolute bottom-0 left-0 w-80 md:w-96 h-80 md:h-96 bg-yellow-400 rounded-full opacity-80" />
@@ -87,18 +78,14 @@ const Hero = () => {
           </div>
         </div>
       </section>
-
-      {/* Second Hero Section */}
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-16">
-            {/* Left Content */}
             <div className="flex-1">
               <h2 className="text-5xl font-bold mb-10">
                 An all-in-one app<br />
                 that makes it easier
               </h2>
-              
               <ul className="space-y-6 mb-10">
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-green-500 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
@@ -127,13 +114,9 @@ const Hero = () => {
                 </svg>
               </a>
             </div>
-
-            {/* Right Content */}
             <div className="flex-1">
               <div className="bg-gray-50 rounded-2xl p-8 relative z-10">
-                {/* Video Preview with Background */}
                 <div className="relative">
-                  {/* Orange Blob Background */}
                   <div className="absolute -top-20 -left-20 md:-top-32 md:-left-40 w-[300px] h-[300px] md:w-[600px] md:h-[600px] z-0">
                     <img 
                       src={blob} 
@@ -141,9 +124,7 @@ const Hero = () => {
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  
-                  {/* Desktop Image with Play Button */}
-                  <div className="relative z-10 rounded-xl overflow-hidden">
+                <div className="relative z-10 rounded-xl overflow-hidden">
                     <img 
                       src={desktop} 
                       alt="App Demo" 
@@ -153,9 +134,7 @@ const Hero = () => {
                   </div>
                 </div>
 
-                {/* Course Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-20 -mt-16 md:-mt-32">
-                  {/* Featured Card */}
                   <div className="bg-white p-5 rounded-lg shadow-sm">
                     <span className="text-purple-600 bg-purple-50 text-sm font-medium px-3 py-1 rounded-md">Featured</span>
                     <h3 className="font-semibold mt-2 text-base">The map of mathematics</h3>
@@ -167,7 +146,6 @@ const Hero = () => {
                     </button>
                   </div>
 
-                  {/* Popular Card */}
                   <div className="bg-white p-5 rounded-lg shadow-sm">
                     <span className="text-blue-600 bg-blue-50 text-sm font-medium px-3 py-1 rounded-md">Popular</span>
                     <h3 className="font-semibold mt-2 text-base">Design for how people think</h3>
@@ -178,8 +156,6 @@ const Hero = () => {
                       Take Lesson
                     </button>
                   </div>
-
-                  {/* New Card */}
                   <div className="bg-white p-5 rounded-lg shadow-sm">
                     <span className="text-green-600 bg-green-50 text-sm font-medium px-3 py-1 rounded-md">New</span>
                     <h3 className="font-semibold mt-2 text-base whitespace-normal">

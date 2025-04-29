@@ -6,7 +6,7 @@ import hatIcon from '../assets/icons/hat_icon.png';
 
 const MeetCommunity = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="pt-16 pb-8 relative overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Main content - Two columns */}
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-16">

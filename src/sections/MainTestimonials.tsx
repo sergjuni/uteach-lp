@@ -1,11 +1,10 @@
 import smile from '../assets/images/pic_smile.png';
 
-const Testimonials = () => {
+const MainTestimonials = () => {
   return (
     <div className="bg-yellow-400 relative py-20">
       <div className="container mx-auto px-4">
         <div className="flex items-center">
-          {/* Navigation Arrow - Left */}
           <button className="hidden md:flex items-center justify-center w-12 h-12 text-gray-800">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M15 19l-7-7 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -13,7 +12,6 @@ const Testimonials = () => {
           </button>
 
           <div className="flex-1 grid md:grid-cols-2 gap-8 md:gap-16 items-center px-4">
-            {/* Left side - Quote */}
             <div className="order-2 md:order-1 mt-12 md:mt-0">
               <div className="max-w-xl">
                 <p className="text-[#14183E] text-2xl md:text-3xl font-light leading-relaxed mb-8">
@@ -35,9 +33,7 @@ const Testimonials = () => {
               </div>
             </div>
 
-            {/* Right side - Image */}
             <div className="relative order-1 md:order-2">
-              {/* Black background shape */}
               <div 
                 className="absolute top-1/2 left-1/2 w-[92%] md:w-[85%] h-[130%] bg-[#14183E] rounded-[40px]"
                 style={{ 
@@ -46,25 +42,15 @@ const Testimonials = () => {
                 }}
               />
               
-              {/* Image container */}
               <div className="relative" style={{ zIndex: 2 }}>
                 <img 
                   src={smile} 
-                  alt="Marie Poirot" 
+                  alt="smile girl" 
                   className="rounded-2xl w-full"
                 />
-                
-                {/* Grid pattern */}
-                <div className="absolute bottom-0 right-0 grid grid-cols-6 gap-1.5 p-4">
-                  {Array.from({ length: 24 }).map((_, i) => (
-                    <div key={i} className="w-2.5 h-2.5 bg-white/30 rounded-sm" />
-                  ))}
-                </div>
               </div>
             </div>
           </div>
-
-          {/* Navigation Arrow - Right */}
           <button className="hidden md:flex items-center justify-center w-12 h-12 text-gray-800">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M9 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -76,4 +62,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials; 
+export default MainTestimonials; 

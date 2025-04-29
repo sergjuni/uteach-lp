@@ -1,9 +1,9 @@
 import Header from './components/Header'
 import Hero from './sections/Hero'
-import ContentCards from './sections/ContentCards'
+import MainTestimonials from './sections/MainTestimonials'
 import Footer from './sections/Footer'
-import Testimonials from './sections/Testimonials'
 import MeetCommunity from './sections/MeetCommunity'
+import UserTestimonials from './components/UserTestimonials'
 
 function App() {
   return (
@@ -11,9 +11,9 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Testimonials />
+        <MainTestimonials />
         <MeetCommunity />
-        <ContentCards />
+        <UserTestimonials />
       </main>
       <Footer />
     </div>
