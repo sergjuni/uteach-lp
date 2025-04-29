@@ -9,6 +9,7 @@ import icon_5 from '../assets/icons/icon_5.png';
 import desktop from '../assets/images/Desktop.png';
 import blob from '../assets/images/Blob.png';
 import vector14 from '../assets/images/vector_14.png';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
@@ -16,20 +17,47 @@ const Hero = () => {
       <section className="pt-40 pb-16 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
-            <div className="flex-1">
-              <h1 className="text-6xl font-bold mb-6 relative">
+            <motion.div 
+              className="flex-1"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <motion.h1 
+                className="text-6xl font-bold mb-6 relative"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
                 <span className="relative inline-block z-10">
                   Teach
-                  <img src={vector14} alt="" className="absolute -bottom-1 left-0 w-full -z-10" />
+                  <motion.img 
+                    src={vector14} 
+                    alt="" 
+                    className="absolute -bottom-1 md:-bottom-2 left-0 w-full -z-10"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.4, delay: 0.6 }}
+                  />
                 </span>
                 <br/>students worldwide
-              </h1>
-              <p className="text-xl text-gray-600 mb-8">
+              </motion.h1>
+              <motion.p 
+                className="text-xl text-gray-600 mb-8"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
                 Amet nunc diam orci duis ut sit diam arcu, nec.
                 Eleifend proin massa tincidunt viverra lectus pulvinar.
                 Nunc ipsum est pellentesque turpis ultricies.
-              </p>
-              <div className="flex gap-4 mb-12">
+              </motion.p>
+              <motion.div 
+                className="flex gap-4 mb-12"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+              >
                 <Button variant="primary">Sign Up Now</Button>
                 <Button 
                   variant="icon_button" 
@@ -38,24 +66,63 @@ const Hero = () => {
                 >
                   View Demo
                 </Button>
-              </div>
-              <div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+              >
                 <div className="flex items-center gap-8">
                   <p className="text-gray-600">
                     Trusted by
                     leading companies
                   </p>
                   <div className="flex gap-6 items-center">
-                    <img src={icon_1} alt="Company 1" className="h-7" />
-                    <img src={icon_2} alt="Company 2" className="h-7" />
-                    <img src={icon_3} alt="Company 3" className="h-7" />
-                    <img src={icon_4} alt="Company 4" className="h-7" />
-                    <img src={icon_5} alt="Company 5" className="h-7" />
+                    <motion.img 
+                      src={icon_1} 
+                      alt="Company 1" 
+                      className="h-7"
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.2 }}
+                    />
+                    <motion.img 
+                      src={icon_2} 
+                      alt="Company 2" 
+                      className="h-7"
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.2 }}
+                    />
+                    <motion.img 
+                      src={icon_3} 
+                      alt="Company 3" 
+                      className="h-7"
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.2 }}
+                    />
+                    <motion.img 
+                      src={icon_4} 
+                      alt="Company 4" 
+                      className="h-7"
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.2 }}
+                    />
+                    <motion.img 
+                      src={icon_5} 
+                      alt="Company 5" 
+                      className="h-7"
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.2 }}
+                    />
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="flex-1 relative">
+              </motion.div>
+            </motion.div>
+            <motion.div 
+              className="flex-1 relative"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+            >
               <div className="relative px-4 md:px-0">
                 <div className="absolute -top-8 right-0 bg-white rounded-lg p-3 shadow-lg z-10 max-w-[200px] text-sm">
                   Nunc, at libero neque
@@ -79,7 +146,7 @@ const Hero = () => {
                   />
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
