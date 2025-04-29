@@ -5,10 +5,12 @@ const Feature = () => {
     <section className="py-16 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Text Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-[#14183E] mb-6">
-              All the cool features
+              All the cool <span className="relative inline-block">
+                features
+                <div className="absolute -bottom-2 left-0 w-full h-3 bg-orange-400 -z-10 transform -rotate-1"></div>
+              </span>
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
               Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non viverra a, neque orci.
@@ -34,7 +36,6 @@ const Feature = () => {
             </a>
           </div>
 
-          {/* Right Column - Feature Image */}
           <div>
             <img 
               src={featureImageRight} 

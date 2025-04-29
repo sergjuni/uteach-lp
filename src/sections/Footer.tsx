@@ -8,12 +8,10 @@ const Footer = () => {
     <footer className="bg-[#14183E] text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-6 gap-8">
-          {/* Logo Column */}
           <div className="md:col-span-1">
             <img src={logoFooter} alt="uteach" className="h-8" />
           </div>
 
-          {/* Product Column */}
           <div className="md:col-span-1">
             <h3 className="font-semibold mb-4">Product</h3>
             <ul className="space-y-2">
@@ -29,7 +27,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Solutions Column */}
           <div className="md:col-span-1">
             <h3 className="font-semibold mb-4">Solutions</h3>
             <ul className="space-y-2">
@@ -40,7 +37,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Resources Column */}
           <div className="md:col-span-1">
             <h3 className="font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
@@ -51,7 +47,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Support Column */}
           <div className="md:col-span-1">
             <h3 className="font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
@@ -62,7 +57,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Company Column */}
           <div className="md:col-span-1">
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
@@ -82,7 +76,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="border-t border-gray-700">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">

@@ -1,6 +1,6 @@
 interface ButtonProps {
   children: React.ReactNode;
-  variant?: 'header_primary' | 'header_secondary' | 'primary' | 'secondary' | 'icon_button' | 'outline_blue' | 'dark';
+  variant?: 'header_primary' | 'header_secondary' | 'primary' | 'secondary' | 'icon_button' | 'dark';
   className?: string;
   onClick?: () => void;
   icon?: React.ReactNode | string;
@@ -14,7 +14,6 @@ const Button = ({ children, variant = 'primary', className = '', onClick, icon }
     primary: 'bg-orange-500 text-white font-bold',
     secondary: 'bg-white text-gray-900 hover:bg-gray-50',
     icon_button: 'bg-white text-blue-500 font-medium hover:bg-blue-50 text-lg',
-    outline_blue: 'bg-white text-blue-500 border-2 border-blue-500 hover:bg-blue-50 rounded-full text-lg',
     dark: 'bg-[#0F172A] text-white font-bold text-xl rounded-2xl hover:bg-[#1a2744] py-4'
   };
 

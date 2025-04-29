@@ -16,8 +16,12 @@ const Hero = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1">
-              <h1 className="text-6xl font-bold mb-6">
-                <span className="text-orange-500">Teach</span> students worldwide
+              <h1 className="text-6xl font-bold mb-6 relative">
+                <span className="relative inline-block">
+                  Teach
+                  <div className="absolute -bottom-2 left-0 w-full h-3 bg-orange-400 -z-10 transform -rotate-1"></div>
+                </span>
+                {" "}students worldwide
               </h1>
               <p className="text-xl text-gray-600 mb-8">
                 Amet nunc diam orci duis ut sit diam arcu, nec.
@@ -83,7 +87,10 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row items-center gap-16">
             <div className="flex-1">
               <h2 className="text-5xl font-bold mb-10">
-                An all-in-one app<br />
+                An <span className="relative inline-block">
+                  all-in-one
+                  <div className="absolute -bottom-2 left-0 w-full h-3 bg-orange-400 -z-10 transform -rotate-1"></div>
+                </span> app<br />
                 that makes it easier
               </h2>
               <ul className="space-y-6 mb-10">

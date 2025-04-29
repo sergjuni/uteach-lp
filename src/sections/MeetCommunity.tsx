@@ -8,9 +8,7 @@ const MeetCommunity = () => {
   return (
     <section className="pt-16 pb-8 relative overflow-hidden">
       <div className="container mx-auto px-4">
-        {/* Main content - Two columns */}
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-16">
-          {/* Left side - Image Collage */}
           <div className="relative">
             <img 
               src={Col} 
@@ -19,17 +17,15 @@ const MeetCommunity = () => {
             />
           </div>
 
-          {/* Right side - Content */}
           <div>
-            <div className="flex flex-wrap items-start gap-2 mb-6">
+            <div className="flex flex-wrap items-start gap-2 mb-6 relative">
               <h2 className="text-4xl md:text-5xl font-bold text-[#14183E] flex-[100%] md:flex-[85%]">
-                Meet international students & teachers
+                Meet <span className="relative">international<img 
+                  src={planeIcon} 
+                  alt="" 
+                  className="w-10 h-10 absolute md:-top-5 -top-7 md:left-[216px] left-[140px]"
+                /></span><br />students & teachers
               </h2>
-              <img 
-                src={planeIcon} 
-                alt="" 
-                className="w-10 h-10 object-contain -mt-3"
-              />
             </div>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
@@ -62,11 +58,9 @@ const MeetCommunity = () => {
         </div>
       </div>
 
-      {/* Statistics - Full width section */}
       <div className="bg-[#14183E] w-screen relative left-[50%] right-[50%] mx-[-50vw]">
         <div className="max-w-6xl mx-auto py-16 px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* User Countries */}
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4">
                 <div className="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center">
@@ -77,7 +71,6 @@ const MeetCommunity = () => {
               <div className="text-yellow-400">user countries</div>
             </div>
 
-            {/* Valued Teachers */}
             <div className="text-center">
               <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <img src={diamondIcon} alt="" className="w-16 h-16" />
@@ -86,7 +79,6 @@ const MeetCommunity = () => {
               <div className="text-yellow-400">valued teachers</div>
             </div>
 
-            {/* Happy Students */}
             <div className="text-center">
               <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <img src={hatIcon} alt="" className="w-16 h-16" />

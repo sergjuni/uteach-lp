@@ -12,7 +12,7 @@ const MainTestimonials = () => {
           </button>
 
           <div className="flex-1 grid md:grid-cols-2 gap-8 md:gap-16 items-center px-4">
-            <div className="order-2 md:order-1 mt-12 md:mt-0">
+            <div className="order-1 mb-8 md:mb-0">
               <div className="max-w-xl">
                 <p className="text-[#14183E] text-2xl md:text-3xl font-light leading-relaxed mb-8">
                   Id urna, nisl, ut quam. Diam suspendisse fringilla quam arcu mattis est velit in. 
@@ -33,7 +33,7 @@ const MainTestimonials = () => {
               </div>
             </div>
 
-            <div className="relative order-1 md:order-2">
+            <div className="relative order-2">
               <div 
                 className="absolute top-1/2 left-1/2 w-[92%] md:w-[85%] h-[130%] bg-[#14183E] rounded-[40px]"
                 style={{ 

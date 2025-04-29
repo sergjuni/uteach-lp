@@ -7,7 +7,6 @@ const Learning = () => {
     <section className="py-14 bg-yellow-400 overflow-hidden">
       <div className="">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          {/* Left Image */}
           <div className="w-full md:w-auto">
             <img 
               src={signUpCardsLeft} 
@@ -16,7 +15,6 @@ const Learning = () => {
             />
           </div>
 
-          {/* Center Content */}
           <div className="text-center">
             <h2 className="text-[32px] md:text-[60px] font-bold text-[#14183E] mb-4 md:mb-6 leading-tight whitespace-nowrap">
               Join a world of learning
@@ -33,7 +31,6 @@ const Learning = () => {
             </div>
           </div>
 
-          {/* Right Image */}
           <div className="w-full md:w-auto">
             <img 
               src={signUpCardsRight} 

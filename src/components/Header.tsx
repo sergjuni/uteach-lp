@@ -58,7 +58,6 @@ const Header = () => {
           </nav>
         )}
 
-        {/* Desktop Buttons */}
         <div className="hidden md:flex items-center gap-4 ml-auto">
           <Button variant="header_secondary">Log in</Button>
           <Button variant="header_primary">Get Started</Button>
