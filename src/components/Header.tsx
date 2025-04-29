@@ -1,5 +1,5 @@
 import Button from './Button';
-import logo from '../assets/images/Logo-colored.png';
+import logo from '../assets/images/logo_colored.png';
 import { useState } from 'react';
 
 const Header = () => {

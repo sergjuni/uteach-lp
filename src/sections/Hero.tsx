@@ -1,13 +1,13 @@
 import Button from '../components/Button';
 import play_icon from '../assets/icons/play_icon.png';
-import group_image from '../assets/images/Group 50.png';
+import group_image from '../assets/images/group_50.png';
 import icon_1 from '../assets/icons/icon_1.png'
 import icon_2 from '../assets/icons/icon_2.png';
 import icon_3 from '../assets/icons/icon_3.png';
 import icon_4 from '../assets/icons/icon_4.png';
 import icon_5 from '../assets/icons/icon_5.png';
-import desktop from '../assets/images/Desktop.png';
-import blob from '../assets/images/Blob.png';
+import desktop from '../assets/images/desktop.png';
+import blob from '../assets/images/blob.png';
 import vector14 from '../assets/images/vector_14.png';
 import { motion } from 'framer-motion';
 
