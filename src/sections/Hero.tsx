@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <>
       {/* First Hero Section */}
-      <section className="pt-24 pb-16">
+      <section className="pt-40 pb-16 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
             {/* Left Content */}
@@ -57,25 +57,25 @@ const Hero = () => {
 
             {/* Right Content with Image and Chat Bubbles */}
             <div className="flex-1 relative">
-              <div className="relative">
+              <div className="relative px-4 md:px-0">
                 {/* Chat Bubbles */}
-                <div className="absolute -top-8 right-0 bg-white rounded-lg p-3 shadow-lg z-10">
+                <div className="absolute -top-8 right-0 bg-white rounded-lg p-3 shadow-lg z-10 max-w-[200px] text-sm">
                   Nunc, at libero neque
                 </div>
-                <div className="absolute top-16 right-12 bg-white rounded-lg p-3 shadow-lg z-10">
+                <div className="absolute top-16 right-8 md:right-12 bg-white rounded-lg p-3 shadow-lg z-10 max-w-[150px] text-sm">
                   Viverra sed
                 </div>
-                <div className="absolute top-32 left-0 bg-[#0F172A] text-white rounded-lg p-3 shadow-lg z-10">
+                <div className="absolute top-32 left-4 md:left-0 bg-[#0F172A] text-white rounded-lg p-3 shadow-lg z-10 max-w-[200px] text-sm">
                   Turpis platea nunc mattis
                 </div>
-                <div className="absolute bottom-16 left-8 bg-[#0F172A] text-white rounded-lg p-3 shadow-lg z-10">
+                <div className="absolute bottom-16 left-8 bg-[#0F172A] text-white rounded-lg p-3 shadow-lg z-10 max-w-[180px] text-sm">
                   Vitae viverra ut non
                 </div>
 
                 {/* Main Image with Background Shapes */}
                 <div className="relative">
-                  <div className="absolute top-0 right-0 w-72 h-72 bg-orange-500 rounded-full" />
-                  <div className="absolute bottom-0 left-0 w-96 h-96 bg-yellow-400 rounded-full" />
+                  <div className="absolute top-0 right-0 w-64 md:w-72 h-64 md:h-72 bg-orange-500 rounded-full opacity-80" />
+                  <div className="absolute bottom-0 left-0 w-80 md:w-96 h-80 md:h-96 bg-yellow-400 rounded-full opacity-80" />
                   <img 
                     src={group_image} 
                     alt="Teaching Platform" 
