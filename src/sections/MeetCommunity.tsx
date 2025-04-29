@@ -23,7 +23,7 @@ const MeetCommunity = () => {
                 Meet <span className="relative">international<img 
                   src={planeIcon} 
                   alt="" 
-                  className="w-10 h-10 absolute md:-top-5 -top-7 md:left-[216px] left-[140px]"
+                  className="w-10 h-10 md:w-15 md:h-15 absolute md:-top-10 -top-7 md:left-[201px] left-[155px]"
                 /></span><br />students & teachers
               </h2>
             </div>
