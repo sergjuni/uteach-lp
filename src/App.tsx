@@ -2,6 +2,8 @@ import Header from './components/Header'
 import Hero from './sections/Hero'
 import ContentCards from './sections/ContentCards'
 import Footer from './sections/Footer'
+import Testimonials from './sections/Testimonials'
+import MeetCommunity from './sections/MeetCommunity'
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Testimonials />
+        <MeetCommunity />
         <ContentCards />
       </main>
       <Footer />
