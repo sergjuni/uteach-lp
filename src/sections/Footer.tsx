@@ -1,47 +1,115 @@
+import worldIcon from '../assets/icons/world_icon.png'
+import euroIcon from '../assets/icons/euro_icon.png'
+import accessibilityIcon from '../assets/icons/accessibility_icon.png'
+import logoFooter from '../assets/images/logo_footer.png'
+
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <h4 className="font-bold mb-4">Product</h4>
+    <footer className="bg-[#14183E] text-white">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-8">
+          {/* Logo Column */}
+          <div className="md:col-span-1">
+            <img src={logoFooter} alt="uteach" className="h-8" />
+          </div>
+
+          {/* Product Column */}
+          <div className="md:col-span-1">
+            <h3 className="font-semibold mb-4">Product</h3>
             <ul className="space-y-2">
-              <li><a href="#features" className="text-gray-400 hover:text-white">Features</a></li>
-              <li><a href="#pricing" className="text-gray-400 hover:text-white">Pricing</a></li>
-              <li><a href="#testimonials" className="text-gray-400 hover:text-white">Testimonials</a></li>
+              <li><a href="#" className="hover:text-gray-300">Pricing</a></li>
+              <li><a href="#" className="hover:text-gray-300">Overview</a></li>
+              <li><a href="#" className="hover:text-gray-300">Browse</a></li>
+              <li>
+                <a href="#" className="hover:text-gray-300 inline-flex items-center">
+                  Accessibility
+                  <span className="ml-2 px-2 py-0.5 text-xs bg-purple-500 text-white rounded">BETA</span>
+                </a>
+              </li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-bold mb-4">Company</h4>
+
+          {/* Solutions Column */}
+          <div className="md:col-span-1">
+            <h3 className="font-semibold mb-4">Solutions</h3>
             <ul className="space-y-2">
-              <li><a href="/about" className="text-gray-400 hover:text-white">About</a></li>
-              <li><a href="/careers" className="text-gray-400 hover:text-white">Careers</a></li>
-              <li><a href="/blog" className="text-gray-400 hover:text-white">Blog</a></li>
+              <li><a href="#" className="hover:text-gray-300">Brainstorming</a></li>
+              <li><a href="#" className="hover:text-gray-300">Ideation</a></li>
+              <li><a href="#" className="hover:text-gray-300">Wireframing</a></li>
+              <li><a href="#" className="hover:text-gray-300">Research</a></li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-bold mb-4">Support</h4>
+
+          {/* Resources Column */}
+          <div className="md:col-span-1">
+            <h3 className="font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
-              <li><a href="/help" className="text-gray-400 hover:text-white">Help Center</a></li>
-              <li><a href="/contact" className="text-gray-400 hover:text-white">Contact</a></li>
-              <li><a href="/privacy" className="text-gray-400 hover:text-white">Privacy</a></li>
+              <li><a href="#" className="hover:text-gray-300">Help Center</a></li>
+              <li><a href="#" className="hover:text-gray-300">Blog</a></li>
+              <li><a href="#" className="hover:text-gray-300">Tutorials</a></li>
+              <li><a href="#" className="hover:text-gray-300">FAQs</a></li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-bold mb-4">Connect</h4>
+
+          {/* Support Column */}
+          <div className="md:col-span-1">
+            <h3 className="font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
-              <li><a href="https://twitter.com" className="text-gray-400 hover:text-white">Twitter</a></li>
-              <li><a href="https://linkedin.com" className="text-gray-400 hover:text-white">LinkedIn</a></li>
-              <li><a href="https://facebook.com" className="text-gray-400 hover:text-white">Facebook</a></li>
+              <li><a href="#" className="hover:text-gray-300">Contact Us</a></li>
+              <li><a href="#" className="hover:text-gray-300">Developers</a></li>
+              <li><a href="#" className="hover:text-gray-300">Documentation</a></li>
+              <li><a href="#" className="hover:text-gray-300">Integrations</a></li>
+            </ul>
+          </div>
+
+          {/* Company Column */}
+          <div className="md:col-span-1">
+            <h3 className="font-semibold mb-4">Company</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="hover:text-gray-300">About</a></li>
+              <li><a href="#" className="hover:text-gray-300">Press</a></li>
+              <li><a href="#" className="hover:text-gray-300">Events</a></li>
+              <li>
+                <a href="#" className="hover:text-gray-300 inline-flex items-center">
+                  Request Demo
+                  <svg className="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-800 pt-8">
-          <p className="text-center text-gray-400">© 2024 UTeach. All rights reserved.</p>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-gray-700">
+        <div className="container mx-auto px-4 py-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div className="text-sm text-gray-400">
+              uteach © 2023. All rights reserved.
+            </div>
+            <div className="flex flex-wrap items-center gap-6">
+              <a href="#" className="text-gray-400 hover:text-white">Terms</a>
+              <a href="#" className="text-gray-400 hover:text-white">Privacy</a>
+              <a href="#" className="text-gray-400 hover:text-white">Contact</a>
+              <button className="flex items-center gap-2 text-gray-400 hover:text-white">
+                <img src={worldIcon} alt="" className="w-5 h-5" />
+                EN
+              </button>
+              <button className="flex items-center gap-2 text-gray-400 hover:text-white">
+                <img src={euroIcon} alt="" className="w-5 h-5" />
+                EUR
+              </button>
+              <button className="flex items-center gap-2 text-gray-400 hover:text-white">
+                <img src={accessibilityIcon} alt="" className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer; 
+export default Footer 

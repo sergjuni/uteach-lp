@@ -4,6 +4,9 @@ import MainTestimonials from './sections/MainTestimonials'
 import Footer from './sections/Footer'
 import MeetCommunity from './sections/MeetCommunity'
 import UserTestimonials from './components/UserTestimonials'
+import Feature from './sections/Feature'
+import Learning from './sections/Learning'
+import Form from './sections/Form'
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
         <MainTestimonials />
         <MeetCommunity />
         <UserTestimonials />
+        <Feature />
+        <Learning />
+        <Form />
       </main>
       <Footer />
     </div>
